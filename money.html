@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grant Approval - SBA Grants</title>
+  <style>
+    body {
+      background-color: #E9F7EF;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .container {
+      max-width: 100%;
+      margin: 0;
+      padding: 20px;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      text-align: center;
+    }
+    
+    h1, h2, p {
+      color: #333333;
+    }
+
+    .approval-message {
+      background-color: #4CAF50;
+      color: #FFFFFF;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .loading-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .loading-box {
+      width: 20px;
+      height: 20px;
+      background-color: #4CAF50;
+      margin: 0 5px;
+      animation: moveLoading 1s infinite alternate;
+    }
+
+    .amount {
+      font-size: 36px;
+      font-weight: bold;
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #CCCCCC;
+      padding: 10px;
+      text-align: left;
+    }
+
+    @media (max-width: 600px) {
+      table, th, td {
+        display: block;
+      }
+
+      th, td {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    @keyframes moveLoading {
+      to {
+        transform: translateX(30px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="amount">$200,000</div>
+
+    <div class="approval-message">
+      <h2>Congratulations!</h2>
+      <p>Your grant application has been approved, and funds will be transferred to the provided bank details soon.</p>
+      <p>Please be patient, and the money transfer will be processed shortly.</p>
+    </div>
+
+    <div class="loading-container">
+      <div class="loading-box"></div>
+      <div class="loading-box"></div>
+      <div class="loading-box"></div>
+    </div>
+
+    <div class="amount">$200,000</div>
+    <h2>Applicant Details</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Louis T Schuman lll</td>
+      </tr>
+      <tr>
+        <th>Business Name</th>
+        <td>Anatomy of Fitness</td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td>30 Appaloosa court Hollister, California 95023</td>
+      </tr>
+      <tr>
+        <th>Phone number</th>
+        <td>415.335.3509</td>
+      </tr>
+    </table>
+
+    <p>
+      If you have any questions or concerns, please contact our customer service representative.
+      <br><br>
+      Thank you for choosing SBA grants to support your business growth and success. We appreciate your patience!
+    </p>
+  </div>
+</body>
+</html>
